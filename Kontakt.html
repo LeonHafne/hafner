@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Ponujamo vrhunsko oblikovanje in razvoj spletnih strani po meri vaših potreb." />
+<meta name="keywords" content="spletna stran, dizajn, razvoj, oblikovanje, programiranje, Hafnerjeve rešitve" />
+<title>Kvadratki z hover efektom</title>
+<link rel="stylesheet" type="text/css" href="slog.css">
+<link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre+SemiBold&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body class="body" style="color: black;">
+    <header id="navbar">
+        <div class="kazalo">
+          <a href="index.html"><div class="logo"></div></a>
+          <div class="line"></div>
+          <nav>
+            <ul>
+              <li><a href="O nas.html">O nas</a></li> 
+              <li class="dropdown">
+                <a href="#">Storitve</a>
+                <ul class="dropdown-menu">
+                  <li><a href="Izdelava spletne strani.html">Izdelovanje strani</a></li>
+                  <li><a href="Dizajniranje spletnih strani.html">Dizajniranje strani</a></li>
+                  <li><a href="Logotipi.html">Logotipi</a></li>
+                </ul> 
+               <li class="dropdown">
+                <a href="#">Postopek dela</a>
+                <ul class="dropdown-menu">
+                  <li><a href="Postopek dela.html">Postopek dela</a></li>
+                  <li><a href="IdejaFigma.html">Ideja / Figma</a></li>
+                  <li><a href="Kodiranje.html">Kodiranje</a></li>
+                  <li><a href="Zaključevanje.html">Zaključevanje</a></li>
+                </ul>
+              <li><a href="Galerija slik.html">Galerija del</a></li>
+              <li><a href="Kontakt.html">Kontakt</a></li>             
+              </li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <section class="sekcija">
+        <div class="vizija-title" style="margin-bottom: 43px; margin-top: 130px;"><span style="text-decoration: underline 5px red;"> Kontakt <strong>!!</strong></span></div>
+        <table>
+            <tr>
+                <td>
+                    <h2 style="padding-left: 203px;">Pošljite sporočilo</h2>
+                    <div class="kontejnar" style="padding-left: 255px; padding-top: 0px;">
+                        
+                        <form action="#" method="POST">
+                        <label for="name">Vaše ime</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">E-poštni naslov</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="topic">Tema</label>
+                        <select id="topic" name="topic">
+                            <option value="splošno">Logotip</option>
+                            <option value="naročilo">Dizajn spletne strani</option>
+                            <option value="podpora">Izdelava spletne strani</option>
+                        </select>
+
+                        <label for="message">Sporočilo</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+
+                        <button type="submit" class="PošljiSpporočilo">Pošlji sporočilo</button>
+                        </form>
+                    </div> 
+                </td>
+                <td style="vertical-align: text-top; padding-top: 65px;">
+                    <h2 style="text-align: left;">Kontakt info</h2>
+                    <div class="paragraph" style="text-align: left;">Kontaktirajte nas preko našega maila <br> <strong>hafnerjevereistve@gmail.com</strong></div>
+                    <div class="paragraph" style="text-align: left;">Naši predstavniki za pomoč strankam bodo z <br>veseljem odgovorili na vaša vprašanja.</div> 
+                    <div class="paragraph" style="text-align: left;">Zahtevki , prejeti po elektronski pošti, so običajno<br> obdelani v enem delovnem dnevu (približno <br>24 ur ob delavnikih oz. 48 ur ob vikendih<br> in praznikih).</div>
+                    <br><div class="paragraph" style="text-align: left;"><img src="slike/INSTAGRAM LOGO.jpg" class="slikaMene" style="height: 25px; width: auto;"> hafenrjeve_resitve</div>
+                </td>
+            </tr>
+        </table>
+        <h2>Kje nas najdete?</h2>
+        <div id="map"></div>
+
+        <script>
+            function initMap() {
+            const podjetjeLokacija = { lat: 46.163207, lng: 14.300837 }; // Puštal 77A
+
+            const mapa = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: podjetjeLokacija,
+            });
+
+            const marker = new google.maps.Marker({
+                position: podjetjeLokacija,
+                map: mapa,
+                title: "Naše podjetje – Puštal 77A",
+            });
+            }
+        </script>
+
+        <!-- Google Maps API s tvojim ključem -->
+        <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwP2tjcLHGp_eTS2o3UlWHPf5qeid-KlI&callback=initMap">
+        </script>
+    </section>
+    <footer>
+    <div class="footer-top">
+      <p>KOMAJ ČAKAMO DA SLIŠIMO OD VAS :)</p>
+      <span class="slikanoge"><img src="slike/HAFNERJEVE RESITVE (3) (1).png" alt="Logo podjetja"></span>
+    </div>
+    
+    <hr>
+  
+    <div class="footer-middle">
+      <div class="contact-item">
+        <img src="slike/GMAIL logo.jpg" alt="Gmail logo">
+        <span>hafnerjeveresitve@gmail.com</span>
+      </div>
+  
+      <div class="contact-item">
+        <img src="slike/INSTAGRAM LOGO.jpg" alt="Instagram logo">
+        <span>hafnerjeve_resitve</span>
+      </div>
+    </div>
+  
+    <hr>
+  </footer>
+    
+    
+
+</body>
+</html>
+
+    
+
